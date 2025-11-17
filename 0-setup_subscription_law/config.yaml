@@ -1,0 +1,3 @@
+  log_analytics_workspace_resource_group_name: "sub-agency-law"  # DO NOT CHANGE
+  log_analytics_workspace_name: "sub-agency-workspace"  # DO NOT CHANGE
+
