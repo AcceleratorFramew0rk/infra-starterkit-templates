@@ -77,7 +77,8 @@ module "linux_function_app" {
   # version = "0.9.0"  
   # version = "0.14.2" # required terrform version 1.9
   # version = "0.17.2"  
-  version = "0.17.0"  
+  # version = "0.17.0"  
+  version = "0.19.1"
 
 
   enable_telemetry = var.enable_telemetry

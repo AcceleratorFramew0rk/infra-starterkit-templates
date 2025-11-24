@@ -109,7 +109,8 @@ resource "tls_private_key" "this" {
 module "vmss" {
   source  = "Azure/avm-res-compute-virtualmachinescaleset/azurerm"
   # version = "0.6.0"
-  version = "0.7.1"  
+  # version = "0.7.1"  
+  version = "0.8.0"  
 
   name                        = "${module.naming.virtual_machine_scale_set.name_unique}${random_string.this.result}"
   location            = try(local.global_settings.resource_group_name, null) == null ? azurerm_resource_group.this.0.location : local.global_settings.location # azurerm_resource_group.this.0.location

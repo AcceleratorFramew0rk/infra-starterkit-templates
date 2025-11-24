@@ -42,7 +42,8 @@ module "private_dns_zones" {
 module "cosmos_db" {
   source  = "Azure/avm-res-documentdb-databaseaccount/azurerm"
   # version = "0.8.0"
-  version = "0.9.0"
+  # version = "0.9.0"
+  version = "0.10.0"  
   # insert the 3 required variables here
 
   resource_group_name = try(local.global_settings.resource_group_name, null) == null ? azurerm_resource_group.this.0.name : local.global_settings.resource_group_name

@@ -3,7 +3,8 @@ module "keyvault" {
   # version = "0.5.2" 
   # version                       = "0.9.1" # this version not working for now - does not support Terraform version 1.7.5
   # version = "0.10.0"
-  version = "0.10.1"
+  # version = "0.10.1"
+  version = "0.10.2"
 
   name                          = "${module.naming.key_vault.name_unique}${random_string.this.result}" 
   enable_telemetry              = var.enable_telemetry

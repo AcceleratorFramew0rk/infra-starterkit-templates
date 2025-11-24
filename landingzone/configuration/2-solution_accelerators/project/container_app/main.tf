@@ -39,7 +39,8 @@ module "containerapp" {
   source  = "Azure/avm-res-app-containerapp/azurerm"
   # version = "0.3.0"
   # version = "0.6.0"
-  version = "0.7.0"
+  # version = "0.7.0"
+  version = "0.7.4"
 
   for_each                     = toset(var.resource_names)
   

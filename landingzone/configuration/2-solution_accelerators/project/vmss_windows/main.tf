@@ -108,7 +108,8 @@ module "get_valid_sku_for_deployment_region" {
 module "vmss" {
   source  = "Azure/avm-res-compute-virtualmachinescaleset/azurerm"
   # version = "0.6.0"
-  version = "0.7.1"  
+  # version = "0.7.1"  
+  version = "0.8.0"
 
   name = (
     length(replace("${module.naming.virtual_machine_scale_set.name}-${random_string.this.result}", "-", "")) > 9

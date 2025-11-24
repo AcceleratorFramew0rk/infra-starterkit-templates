@@ -90,7 +90,8 @@ module "sql_server" {
   # source = "./../../../../../../modules/terraform-azurerm-aaf/modules/databases/terraform-azurerm-avm-res-sql-server"  
   # source = "AcceleratorFramew0rk/aaf/azurerm//modules/databases/terraform-azurerm-avm-res-sql-server"  
   source  = "Azure/avm-res-sql-server/azurerm"
-  version = "0.1.5"
+  # version = "0.1.5"
+  version = "0.1.6"  
   # insert the 3 required variables here
   
   enable_telemetry             = var.enable_telemetry

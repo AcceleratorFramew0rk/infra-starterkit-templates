@@ -2,7 +2,8 @@
 module "apim" {
   source  = "Azure/avm-res-apimanagement-service/azurerm"
   # version = "0.0.1"
-  version = "0.0.4"
+  # version = "0.0.4"
+  version = "0.0.5"
 
   name                = "${module.naming.user_assigned_identity.name}-${random_string.this.result}"
   resource_group_name          = try(local.global_settings.resource_group_name, null) == null ? azurerm_resource_group.this.0.name : local.global_settings.resource_group_name

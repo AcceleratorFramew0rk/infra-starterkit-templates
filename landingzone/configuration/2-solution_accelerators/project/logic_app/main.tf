@@ -156,7 +156,8 @@ data "azurerm_role_definition" "this" {
 module "logicapp" {
   source  = "Azure/avm-res-web-site/azurerm"
   # version = "0.17.0"
-  version = "0.17.2"
+  # version = "0.17.2"
+  version = "0.19.1"  
   # insert the 6 required variables here
 
   kind     = "logicapp"

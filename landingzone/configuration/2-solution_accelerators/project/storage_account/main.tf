@@ -61,7 +61,8 @@ module "storageaccount" {
   source  = "Azure/avm-res-storage-storageaccount/azurerm"
   # version = "0.1.3"
   # version = "0.6.3"
-  version = "0.6.4"
+  # version = "0.6.4"
+  version = "0.6.6"
 
   account_replication_type      = "LRS" # "GRS"
   account_tier                  = "Standard"

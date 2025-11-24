@@ -2,7 +2,8 @@
 module "container_group1" {
   # source  = "./../../../../../../modules/terraform-azurerm-aaf/modules/compute/terraform-azurerm-avm-res-containerinstance-containergroup"
   source  = "Azure/avm-res-containerinstance-containergroup/azurerm"
-  version = "0.1.0"
+  # version = "0.1.0"
+  version = "0.2.0"
 
   for_each                     = toset(var.resource_names)
 

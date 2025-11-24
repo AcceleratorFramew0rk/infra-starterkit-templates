@@ -96,7 +96,8 @@ module "virtualmachine1" {
   source = "Azure/avm-res-compute-virtualmachine/azurerm"
   # version = "0.14.0"
   # version = "0.18.1" # Mar 2025
-  version = "0.19.3"
+  # version = "0.19.3"
+  version = "0.20.0"
 
   for_each            = local.vm_indices 
   

@@ -52,8 +52,10 @@ module "private_dns_zones" {
 # This is the module call
 module "container_registry" {
   source  = "Azure/avm-res-containerregistry-registry/azurerm"
-  version = "0.4.0"
+  # version = "0.4.0"
+  version = "0.5.0"
 
+  enable_telemetry            = true
   name                          = replace("${module.naming.container_registry.name}${random_string.this.result}", "-", "") # "${module.naming.container_registry.name_unique}${random_string.this.result}" # module.naming.container_registry.name_unique
   location                      = try(local.global_settings.resource_group_name, null) == null ? azurerm_resource_group.this.0.location : local.global_settings.location
   resource_group_name           = try(local.global_settings.resource_group_name, null) == null ? azurerm_resource_group.this.0.name : local.global_settings.resource_group_name
