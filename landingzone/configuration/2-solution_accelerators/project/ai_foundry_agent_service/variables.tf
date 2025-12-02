@@ -52,16 +52,12 @@ variable "private_endpoint_subnet_id" {
 # This is to allow ingress from SEED Devices to access Foundry for Development
 variable "ingress_client_ip" {
   description = <<EOF
-  Allowlist for Ingress IPs. The default value is set to the current CloudFlare IPs subjected to future updates if and when SEED has changes to the IPs"
+  Allowlist for Ingress IPs. "
   EOF
   type        = list(string)
   default = [
-    "8.29.230.18",
-    "8.29.230.19",
-    "104.30.161.22",
-    "104.30.161.23",
-    "104.30.161.24",
-    "104.30.161.25"
+    "192.168.0.1",
+    "192.168.0.2"
   ]
 
   validation {
@@ -83,8 +79,8 @@ variable "deployment_machine_ips" {
   EOF
   type        = list(string)
   default = [
-    "13.251.177.7",
-    "18.143.61.190"
+    "192.168.0.3",
+    "192.168.0.4"
   ]
 
   validation {
